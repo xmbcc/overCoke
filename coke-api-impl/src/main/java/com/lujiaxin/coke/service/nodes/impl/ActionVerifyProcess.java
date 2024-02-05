@@ -1,5 +1,6 @@
 package com.lujiaxin.coke.service.nodes.impl;
 
+import com.lujiaxin.coke.config.myInterface.MyLog;
 import com.lujiaxin.coke.config.domain.ContextParam;
 import com.lujiaxin.coke.service.nodes.BussinessProcess;
 import com.lujiaxin.coke.domain.vo.ActionAllVo;
@@ -14,6 +15,7 @@ public class ActionVerifyProcess implements BussinessProcess {
     private static final Integer status = 7;
 
     @Override
+    @MyLog
     public void doProcess(ContextParam param) {
 
         ActionAllVo actionAllVo = param.getActionAllVo();

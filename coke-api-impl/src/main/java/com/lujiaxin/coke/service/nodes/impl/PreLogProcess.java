@@ -1,5 +1,6 @@
 package com.lujiaxin.coke.service.nodes.impl;
 
+import com.lujiaxin.coke.config.myInterface.MyLog;
 import com.lujiaxin.coke.config.domain.ContextParam;
 import com.lujiaxin.coke.service.nodes.BussinessProcess;
 
@@ -13,6 +14,7 @@ public class PreLogProcess implements BussinessProcess {
     private static final Integer status = 3;
 
     @Override
+    @MyLog
     public void doProcess(ContextParam param) {
 
 

@@ -1,5 +1,6 @@
 package com.lujiaxin.coke.service.nodes.impl;
 
+import com.lujiaxin.coke.config.myInterface.MyLog;
 import com.lujiaxin.coke.config.domain.ContextParam;
 import com.lujiaxin.coke.service.nodes.BussinessProcess;
 import com.lujiaxin.coke.domain.UserInfo;
@@ -20,6 +21,7 @@ public class AuthTokenProcess implements BussinessProcess {
     private ParseUserInfo parseUserInfo;
 
     @Override
+    @MyLog
     public void doProcess(ContextParam param) {
         String token = param.getToken();
 
